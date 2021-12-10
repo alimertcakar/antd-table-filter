@@ -1,6 +1,7 @@
 // @ts-nocheck
 import useTableFilters from "hooks/useTableFilters";
 import React from "react";
+import styled from "styled-components";
 
 interface Props {
   renderTable: () => any;
