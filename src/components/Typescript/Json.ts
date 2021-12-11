@@ -13,7 +13,7 @@ const somethingG: JSONType = {
   null: Symbol.for("selam"),
 };
 
-function doSomeMath(x: number, y: number): void;
+function doSomeMath(x: number, y: number | null): void;
 function doSomeMath(x: string, y: string): void;
 function doSomeMath(x: any, y: any) {
   if (true) {
@@ -29,18 +29,10 @@ console.log(ads);
 console.log(ads);
 console.log(ads);
 
+let b;
+console.log(b);
 console.log("ads");
 
 const { something, something2, ...remainingProps } = props;
 
 // <Component {...remainingProps} />;
-
-class {
-  constructor() {}
-
-  public info() {}
-
-  private personalInfo() {}
-
-  protected selfInfo() {}
-}
