@@ -1,5 +1,7 @@
 // JSON types
 
+import { BaseHTMLAttributes, ButtonHTMLAttributes, ReactHTML } from "react";
+
 type JSONPrimitive = number | string | boolean | null | undefined | symbol;
 type JSONObject = { [key: string]: JSONPrimitive };
 type JSONArray = JSONPrimitive[];
@@ -11,15 +13,17 @@ const somethingG: JSONType = {
   null: Symbol.for("selam"),
 };
 
-const doSomeMath: () => void | number = () => {
+function doSomeMath(x: number, y: number): void;
+function doSomeMath(x: string, y: string): void;
+function doSomeMath(x: any, y: any) {
   if (true) {
     return;
   }
 
   return 12321;
-};
+}
 
-const ads = doSomeMath();
+const ads = doSomeMath("aa", 1);
 console.log(ads);
 console.log(ads);
 console.log(ads);
@@ -29,4 +33,14 @@ console.log("ads");
 
 const { something, something2, ...remainingProps } = props;
 
-<Component {...remainingProps} />;
+// <Component {...remainingProps} />;
+
+class {
+  constructor() {}
+
+  public info() {}
+
+  private personalInfo() {}
+
+  protected selfInfo() {}
+}
