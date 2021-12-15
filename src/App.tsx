@@ -3,10 +3,11 @@ import MemoizationExample from "components/Memoization/MemoizationExample1";
 import MemoizationExample3 from "components/Memoization/MemoizationExample3";
 import MemoizationExample4 from "components/Memoization/MemoizationExample4";
 import Table from "components/Table";
+import useSomething from "hooks/useSomething";
 import React from "react";
 
 function App() {
-  const filters = [{ type: FilterTypes.sort }];
+  useSomething();
 
   return (
     <main>
