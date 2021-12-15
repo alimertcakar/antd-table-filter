@@ -105,3 +105,18 @@ interface Todo {
 type TodoTypes = keyof Todo;
 
 TodoTypes = "id" | "text" | "due";
+
+interface Car {
+  engine: "1600cc";
+}
+
+interface Motorcycle {
+  engine: "600cc";
+}
+
+function fetcher() {
+  const data = fetch("hello");
+  return data;
+}
+
+type FetcherResponse = typeof fetcher;
