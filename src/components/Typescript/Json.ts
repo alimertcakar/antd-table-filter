@@ -36,3 +36,5 @@
 // const { something, something2, ...remainingProps } = props;
 
 // // <Component {...remainingProps} />;
+
+export {};
