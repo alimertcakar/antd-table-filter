@@ -7,7 +7,6 @@ import React from "react";
 
 function App() {
   const filters = [{ type: FilterTypes.sort }];
-
   return (
     <main>
       {/* <h1>Ant-d Table Filter</h1> */}
@@ -15,6 +14,7 @@ function App() {
       <MemoizationExample />
       <MemoizationExample3 />
       <MemoizationExample4 />
+      lalala
     </main>
   );
 }
